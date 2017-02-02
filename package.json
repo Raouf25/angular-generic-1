@@ -1,0 +1,20 @@
+{
+  "name": "angular-generic",
+  "version": "1.0.0",
+  "description": "An example application to demonstrate a wide range of AngularJS best practices",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 ./"
+  },
+  "author": "Makhlouf Raouf",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-chart.js": "^1.1.1",
+    "angular-route": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "ng-dialog": "^0.6.6"
+  }
+}
