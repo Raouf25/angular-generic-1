@@ -39,12 +39,27 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <div class="well">
-      <p>1-Some text..</p>
-    </div>
+    <!-- <div class="well"> -->
+      <!-- <p>1-Some text..</p> -->
+      <div class="panel panel-default">
+          <div class="panel-heading">
+                <!-- Panel Heading -->
+                Line Chart
+          </div>
+          <div class="panel-body">
+                <!-- Panel Content -->
+                <canvas id="line" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick">
+                </canvas>
+          </div>
+      </div>
+
+    <!-- </div> -->
     <div class="well">
        <p>Upcoming Events..</p>
     </div>
+
     <div class="well">
        <p>Visit Our Blog</p>
     </div>

@@ -20,7 +20,7 @@ function config ($routeProvider) {
         }).
 		when('/projects/project_1', {
             templateUrl: 'projects/project_1.tpl.html',
-            controller: 'Project1Controller as project_1'
+            controller: 'LineCtrl as project_1'
         })
 
             // .when('/premieres', {
