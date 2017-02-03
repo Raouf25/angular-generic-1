@@ -18,6 +18,11 @@ angular.module('app.core')
      ngDialog.open({ template: 'logout/logout.popup.html' });
     }
 
+    $scope.openLoginPopup=function  () {
+    console.log("it's openLogoutPopup in the controller of  common directives");
+    ngDialog.open({ template: 'login/login.popup.html' });
+   }
+
 
     // calling our ConfirmLogout function.
       $scope.onConfirmLogout = function(){
@@ -67,7 +72,7 @@ angular.module('app.core')
           '</ul>'+
           '<ul ng-show=!is_connected class="nav navbar-nav navbar-right">'+
               '<li><a href="#!/signup"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'+
-              '<li><a href="#!/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>'+
+              '<li><a ng-click="openLoginPopup()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>'+
           '</ul>'+
           '</div>',
     };
