@@ -41,7 +41,7 @@ function ApiKey(apiKey) {
 
 
 
-function configs($httpProvider,apiKeyProvider) {
+function configs($httpProvider,apiKeyProvider,HereMapsConfigProvider) {
     var interceptor = function($location, $log, $q) {
         function error(response) {
             if (response.status === 401) {
@@ -71,24 +71,30 @@ function configs($httpProvider,apiKeyProvider) {
         //  for more information look to this :
         //  http://websystique.com/spring-security/angularjs-basic-authentication-using-spring-security/
         //  http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/
-      var Authorization =function() {
-        return {
-        // Send the Authorization header with each request
-            'request': function(config) {
-                config.headers = config.headers || {};
-                var encodedString = btoa("bill:abc123");
-                config.headers.Authorization = 'Basic '+encodedString;
-               return config;
-            }
-        };
-      };
-
-      $httpProvider.interceptors.push(Authorization);
+      // var Authorization =function() {
+      //   return {
+      //   // Send the Authorization header with each request
+      //       'request': function(config) {
+      //           config.headers = config.headers || {};
+      //           var encodedString = btoa("bill:abc123");
+      //           config.headers.Authorization = 'Basic '+encodedString;
+      //          return config;
+      //       }
+      //   };
+      // };
+      //
+      // $httpProvider.interceptors.push(Authorization);
 
 
 
       // what I added : initialize th apiKey object
       apiKeyProvider.setApiKey("A1B2C3");
+
+      HereMapsConfigProvider.setOptions({
+                'app_id': 'Dw2namHklrhv4nxUr8OM',
+                'app_code': 'njxG6JR73lZGhr9X75oXlw',
+                'useHTTPS': true
+            });
 
 }
 

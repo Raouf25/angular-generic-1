@@ -1,2 +1,2 @@
 'use strict';
-angular.module('app.core', ['ngDialog','chart.js']);
+angular.module('app.core', ['ngDialog','chart.js','datatables','heremaps']);

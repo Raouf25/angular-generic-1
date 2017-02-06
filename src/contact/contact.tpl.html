@@ -6,11 +6,51 @@
 	<!-- </div> -->
 <!-- </div> -->
 
-
 <div align="center">
       <p> {{apiKey}}</p>
       <p> {{apiKey.apiKey}}</p>
 </div>
 
-<contactlist data="agenda">
-</contactlist>
+<br>
+
+
+<div class="row">
+
+  <div class="col-md-3">
+    <div class="list-group">
+      <a href="#" class="list-group-item"> <span class="badge">14</span> Cras justo odio</a>
+      <a href="#" class="list-group-item"> <span class="badge">2</span> Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item">  Morbi leo risus</a>
+      <a href="#" class="list-group-item"> <span class="badge">1</span> Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item"> <span class="badge">3</span> Vestibulum at eros</a>
+    </div>
+
+    <contactlist data="agenda"></contactlist>
+  </div>
+
+<div class="col-md-9">
+
+  <table datatable="ng" class="row-border hover">
+          <thead>
+          <tr>
+              <th>ID</th>
+              <th><i class="fa fa-user-circle"></i> First name</th>
+              <th>Last name</th>
+              <th><i class="fa fa-phone"></i> Phone</th>
+              <th><i class="fa fa-envelope" ></i> Email</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="user in agenda">
+          <td>{{$index + 1}}</td>
+          <td>{{user.First_name}}</td>
+          <td>{{user.Last_name}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.email}}</td>
+         </tr>
+          </tbody>
+      </tr>
+  </table>
+</div>
+
+</div>

@@ -7,7 +7,7 @@ angular.module('app.core')
 // }])
 
 // For more information please see this  http://jtblin.github.io/angular-chart.js/
-.controller("LineCtrl2", ['$scope',function ($scope) {
+.controller("Project1Controller", ['$scope',function ($scope) {
 
   $scope.labels2 = ["January", "February", "March", "April", "May", "June", "July"];
   $scope.series = ['Series A', 'Series B', 'Series C'];

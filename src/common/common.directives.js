@@ -59,7 +59,7 @@ angular.module('app.core')
             '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>'+
             '<ul class="dropdown-menu">'+
               '<li><a href="#!/projects/project_1">Project 1</a></li>'+
-              '<li><a href="#">Project 2</a></li>'+
+              '<li><a href="#!/projects/project_2">Project 2</a></li>'+
               '<li><a href="#">Project 3</a></li>'+
             '</ul>'+
         '</li>'+
