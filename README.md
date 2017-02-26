@@ -55,7 +55,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at [`localhost:8000/src/#!/`][local-app-url].
+Now browse to the app at [`localhost:8000/`][local-app-url].
 
 
 ## Updating Angular

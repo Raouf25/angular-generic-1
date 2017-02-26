@@ -7,19 +7,19 @@ angular
 function config ($routeProvider) {
     $routeProvider.
     when('/home', {
-            templateUrl: 'home/home.tpl.html',
+            templateUrl: './src/home/home.tpl.html',
             controller: 'HomeController as home'
         }).
 		when('/contact', {
-            templateUrl: 'contact/contact.tpl.html',
+            templateUrl: './src/contact/contact.tpl.html',
             controller: 'ContactController as contact'
         }).
 		when('/signup', {
-            templateUrl: 'signup/signup.tpl.html',
+            templateUrl: './src/signup/signup.tpl.html',
             controller: 'SignupController as signup'
         }).
 		when('/projects/project_1', {
-            templateUrl: 'projects/project_1.tpl.html',
+            templateUrl: './src/projects/project_1.tpl.html',
             controller: 'LineCtrl as project_1'
         })
 
